@@ -27,7 +27,13 @@ This checks core runtime dependencies (excludes notebook and viz tooling).
 ## Git warm-up
 Make a tiny change and practice commits (e.g., edit the print line in `main.py`):
 ```bash
+git remote set-url origin <your-new-repo-url>
 git add main.py README.md
 git commit -m "chore: update audit note"
-git push
+git push -u origin main
+```
+
+If `main` is not the default branch, use:
+```bash
+git push -u origin master
 ```
