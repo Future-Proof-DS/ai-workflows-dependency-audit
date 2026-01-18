@@ -1,0 +1,33 @@
+# AI Workflows Dependency Audit
+
+This repo is a lightweight audit to confirm your environment can install all dependencies used across the AI workflows bootcamp projects.
+
+## Requirements
+- Python 3.10.x or 3.11.x (this repo enforces `>=3.10,<3.12`)
+- Poetry installed
+
+## Quick start
+```bash
+poetry install
+```
+
+If Poetry reports an incompatible Python version, point it to a compatible interpreter:
+```bash
+poetry env use /path/to/python3.11
+poetry install
+```
+
+## Smoke check
+Run the import check:
+```bash
+poetry run python main.py
+```
+This checks core runtime dependencies (excludes notebook and viz tooling).
+
+## Git warm-up
+Make a tiny change and practice commits (e.g., edit the print line in `main.py`):
+```bash
+git add main.py README.md
+git commit -m "chore: update audit note"
+git push
+```
